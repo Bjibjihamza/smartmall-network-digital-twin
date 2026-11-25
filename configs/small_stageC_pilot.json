@@ -1,0 +1,13 @@
+{
+  "campaign_name": "C_pilot",
+  "description": "Stage C pilot: one run per impairment family on L5 (PC-SHOP access link, on the UDP flow path). Bandwidth cap 10 Mb/s with a 100-packet netem queue, below (5 Mb/s) and above (40 Mb/s) the cap, plus idle.",
+  "seed": 2026112502,
+  "repeats": 1,
+  "scenarios": [
+    {"fault_type": "LINK_DELAY", "target": "L5", "params": {"added_delay_ms": 20}, "loads_mbps": [5]},
+    {"fault_type": "LINK_LOSS", "target": "L5", "params": {"loss_pct": 5}, "loads_mbps": [5],
+     "protocol": {"packets": 10, "ping_interval": 0.1, "ping_wait": 1.0}},
+    {"fault_type": "LINK_BANDWIDTH", "target": "L5", "params": {"bw_mbps": 10, "queue_pkts": 100}, "loads_mbps": [0, 5, 40]}
+  ],
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3}
+}

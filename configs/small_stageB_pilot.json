@@ -1,0 +1,12 @@
+{
+  "campaign_name": "B_pilot",
+  "description": "Stage B pilot: link failures L2 (uplink, flow on failed path) and L5 (sender access link) under 0/5/40 Mb/s background UDP",
+  "seed": 20261125,
+  "repeats": 1,
+  "loads_mbps": [0, 5, 40],
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3},
+  "scenarios": [
+    {"fault_type": "LINK_FAILURE", "target": "L2"},
+    {"fault_type": "LINK_FAILURE", "target": "L5"}
+  ]
+}

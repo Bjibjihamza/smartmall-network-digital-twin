@@ -1,0 +1,17 @@
+{
+  "campaign_name": "C_full",
+  "description": "Stage C: degradations. DELAY +20 ms on L5 (100 Mb/s access, on flow path) and L2 (1 Gb/s uplink, on flow path), plus +5 ms on L5 (magnitude sensitivity, idle). LOSS 5 % on L5 and L2 with 10 ICMP echoes per probe. BANDWIDTH cap 10 Mb/s / 100-packet queue on L5 at 0 (invisible), 5 (non-binding) and 40 Mb/s (offered > cap => congestion test). Healthy 40 Mb/s controls on uncapped links come from Stage B NONE runs. 3 independent repetitions.",
+  "seed": 2026112503,
+  "repeats": 3,
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3},
+  "scenarios": [
+    {"fault_type": "LINK_DELAY", "target": "L5", "params": {"added_delay_ms": 20}, "loads_mbps": [0, 5]},
+    {"fault_type": "LINK_DELAY", "target": "L2", "params": {"added_delay_ms": 20}, "loads_mbps": [0, 5]},
+    {"fault_type": "LINK_DELAY", "target": "L5", "params": {"added_delay_ms": 5}, "loads_mbps": [0]},
+    {"fault_type": "LINK_LOSS", "target": "L5", "params": {"loss_pct": 5}, "loads_mbps": [0, 5],
+     "protocol": {"packets": 10, "ping_interval": 0.1, "ping_wait": 1.0}},
+    {"fault_type": "LINK_LOSS", "target": "L2", "params": {"loss_pct": 5}, "loads_mbps": [0, 5],
+     "protocol": {"packets": 10, "ping_interval": 0.1, "ping_wait": 1.0}},
+    {"fault_type": "LINK_BANDWIDTH", "target": "L5", "params": {"bw_mbps": 10, "queue_pkts": 100}, "loads_mbps": [0, 5, 40]}
+  ]
+}

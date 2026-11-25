@@ -1,0 +1,17 @@
+{
+  "campaign_name": "B_full",
+  "description": "Stage B: link failures L1-L6 under 0/5/40 Mb/s background UDP (PC-SHOP->SRV-LOCAL), 3 independent repetitions each, plus no-fault controls at each load. 3 repetitions: signatures are deterministic in the v1 campaign (identical across 3 reps); a 4th adds cost without new coverage. Loads x links x reps = 54 fault runs + 9 controls.",
+  "seed": 2026112501,
+  "repeats": 3,
+  "loads_mbps": [0, 5, 40],
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3},
+  "scenarios": [
+    {"fault_type": "NONE"},
+    {"fault_type": "LINK_FAILURE", "target": "L1"},
+    {"fault_type": "LINK_FAILURE", "target": "L2"},
+    {"fault_type": "LINK_FAILURE", "target": "L3"},
+    {"fault_type": "LINK_FAILURE", "target": "L4"},
+    {"fault_type": "LINK_FAILURE", "target": "L5"},
+    {"fault_type": "LINK_FAILURE", "target": "L6"}
+  ]
+}

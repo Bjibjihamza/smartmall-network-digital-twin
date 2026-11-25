@@ -1,0 +1,19 @@
+{
+  "campaign_name": "D_full",
+  "description": "Stage D: node failures. Switch power-off (all own interfaces admin-down; neighbours lose carrier) and silent data-plane black hole (OVS fail-mode secure, flows deleted; all interfaces stay up) for DSW-1, SW-ADM, SW-COM at 0 and 5 Mb/s; host power-off (host interface admin-down) for all four hosts at 5 Mb/s (traffic matters for PC-SHOP sender / SRV-LOCAL receiver). 3 independent repetitions.",
+  "seed": 2026112505,
+  "repeats": 3,
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3},
+  "scenarios": [
+    {"fault_type": "NODE_FAILURE", "target": "DSW-1", "loads_mbps": [0, 5]},
+    {"fault_type": "NODE_FAILURE", "target": "SW-ADM", "loads_mbps": [0, 5]},
+    {"fault_type": "NODE_FAILURE", "target": "SW-COM", "loads_mbps": [0, 5]},
+    {"fault_type": "SWITCH_BLACKHOLE", "target": "DSW-1", "loads_mbps": [0, 5]},
+    {"fault_type": "SWITCH_BLACKHOLE", "target": "SW-ADM", "loads_mbps": [0, 5]},
+    {"fault_type": "SWITCH_BLACKHOLE", "target": "SW-COM", "loads_mbps": [0, 5]},
+    {"fault_type": "NODE_FAILURE", "target": "PC-ADM", "loads_mbps": [5]},
+    {"fault_type": "NODE_FAILURE", "target": "SRV-LOCAL", "loads_mbps": [5]},
+    {"fault_type": "NODE_FAILURE", "target": "PC-SHOP", "loads_mbps": [5]},
+    {"fault_type": "NODE_FAILURE", "target": "POS", "loads_mbps": [5]}
+  ]
+}

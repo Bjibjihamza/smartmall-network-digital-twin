@@ -1,0 +1,13 @@
+{
+  "campaign_name": "D_pilot",
+  "description": "Stage D pilot: one run per node-failure mechanism class: access switch power-off (SW-COM, on flow path), distribution switch power-off (DSW-1, idle), host power-off (PC-SHOP = flow sender), silent data-plane black hole (DSW-1).",
+  "seed": 2026112504,
+  "repeats": 1,
+  "protocol": {"rounds": 3, "window_s": 4.0, "packets": 3},
+  "scenarios": [
+    {"fault_type": "NODE_FAILURE", "target": "SW-COM", "loads_mbps": [5]},
+    {"fault_type": "NODE_FAILURE", "target": "DSW-1", "loads_mbps": [0]},
+    {"fault_type": "NODE_FAILURE", "target": "PC-SHOP", "loads_mbps": [5]},
+    {"fault_type": "SWITCH_BLACKHOLE", "target": "DSW-1", "loads_mbps": [5]}
+  ]
+}
