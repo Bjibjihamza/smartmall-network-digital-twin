@@ -1,0 +1,21 @@
+{
+  "topology_id": "small_v1",
+  "family": "small",
+  "nodes": [
+    {"id": "DSW-1", "type": "switch", "layer": "distribution"},
+    {"id": "SW-ADM", "type": "switch", "layer": "access"},
+    {"id": "SW-COM", "type": "switch", "layer": "access"},
+    {"id": "PC-ADM", "type": "host", "zone": "administration"},
+    {"id": "SRV-LOCAL", "type": "host", "zone": "services"},
+    {"id": "PC-SHOP", "type": "host", "zone": "commerce"},
+    {"id": "POS", "type": "host", "zone": "paiement"}
+  ],
+  "links": [
+    {"id": "L1", "source": "DSW-1", "target": "SW-ADM", "bandwidth_mbps":1000, "delay_ms":1},
+    {"id": "L2", "source": "DSW-1", "target": "SW-COM", "bandwidth_mbps":1000, "delay_ms":1},
+    {"id": "L3", "source": "SW-ADM", "target": "PC-ADM", "bandwidth_mbps":100, "delay_ms":1},
+    {"id": "L4", "source": "SW-ADM", "target": "SRV-LOCAL", "bandwidth_mbps":100, "delay_ms":1},
+    {"id": "L5", "source": "SW-COM", "target": "PC-SHOP", "bandwidth_mbps":100, "delay_ms":1},
+    {"id": "L6", "source": "SW-COM", "target": "POS", "bandwidth_mbps":100, "delay_ms":1}
+  ]
+}
