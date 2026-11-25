@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartmall-digital-twin"
+version = "0.2.0"
+description = "SmartMall Network Digital Twin: Mininet-based fault emulation, telemetry and graph-ready datasets for network fault detection and localization"
+readme = "README.md"
+requires-python = ">=3.10"
+# The core library (src/smartmall) and all offline tools use only the standard library.
+dependencies = []
+
+[project.optional-dependencies]
+# scripts/validate_topology.py and scripts/visualize_topology.py
+topology-tools = ["networkx>=3.0", "matplotlib>=3.5"]
+# Experiment execution additionally requires the Ubuntu system packages
+# mininet (2.3.0), openvswitch-switch (2.17) and iperf3 (3.9); they are not pip-installable here.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Tests use the standard library only:  python -m unittest discover -s tests
+# (pytest, if installed later, discovers the same tests.)
+[tool.pytest.ini_options]
+testpaths = ["tests"]

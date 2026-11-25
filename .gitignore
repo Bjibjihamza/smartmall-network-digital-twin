@@ -1,0 +1,41 @@
+# Python bytecode and build artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Transient local outputs (smoke tests, scratch).
+data/interim/
+tmp/
+
+# Experimental evidence lives in the external archive (../smartmall-data-archive, or $SMARTMALL_ARCHIVE).
+# The repository keeps only results: data/processed/, data/catalog/ and the reports in docs/.
+# New collections still write here and stay local until archived.
+data/raw/
+data/campaigns/
+data/audits/
+docs/history/

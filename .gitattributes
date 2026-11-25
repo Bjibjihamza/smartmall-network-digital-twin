@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+# Raw evidence and fixtures are stored byte-for-byte (no EOL normalisation)
+data/** -text
+tests/fixtures/** -text
