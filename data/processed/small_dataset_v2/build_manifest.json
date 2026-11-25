@@ -1,0 +1,23 @@
+{
+  "built_at_utc": "2026-11-25T18:14:39+00:00",
+  "v2_campaigns": [
+    "campaign_B_full_20261125T155024Z_bef001",
+    "campaign_C_full_20261125T165402Z_db0b5f",
+    "campaign_D_full_20261125T173105Z_35c196"
+  ],
+  "v1_campaigns": [
+    "campaign_20261125T134916Z_249a1c",
+    "campaign_20261125T140815Z_f24de3"
+  ],
+  "experiments": 165,
+  "windows": 1431,
+  "excluded": [],
+  "source_sha256": {
+    "scripts/build_small_dataset.py": "e1b3bf32400247324762df4da64b44d39b13f13779de6a6424156f2ae7dab392",
+    "src/smartmall/dataset.py": "fe77c17bcbfccbb377cfdbf8a8381e382be37c7e032cd8fd1145471506ac9c6d",
+    "src/smartmall/audit.py": "993a4b44e6941964dc604bd6782e95cca1f27c88ea4a196961eee214a7c37188",
+    "src/smartmall/graph_loader.py": "cb9784266da422ee24f1cee7ee79f108deca3aa328087498dbd81e81a711f6e4",
+    "topologies/small.json": "21d6bba814d960524ef90b3f7130496b6963ef480d41616e20dea3f4321e1aec"
+  },
+  "quality_passed": true
+}

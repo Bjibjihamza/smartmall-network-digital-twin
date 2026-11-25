@@ -1,0 +1,205 @@
+folder,kind,protocol,role,campaigns,status,scenario,load_mbps,in_dataset,files,bytes
+data/raw/small_v1/design_probe_20261125T152755Z_1a0cdb,design_probe,design_probe,design_evidence,,completed,,,0,1,1731
+data/raw/small_v1/exp_20261125T130833Z_c13c88,link_failure_experiment,small_link_v1,historical_v1_development,,completed,LINK_FAILURE:L2,0,0,3,8047
+data/raw/small_v1/exp_20261125T131807Z_c9c775,link_failure_experiment,small_link_v1,historical_v1_development,,completed,LINK_FAILURE:L2,0,0,4,27275
+data/raw/small_v1/exp_20261125T132943Z_6c8fdd,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T132943Z_fc199a,completed,LINK_FAILURE:L2,0,0,4,27277
+data/raw/small_v1/exp_20261125T133031Z_12d6e8,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T132943Z_fc199a,completed,LINK_FAILURE:L1,0,0,4,27284
+data/raw/small_v1/exp_20261125T133439Z_73a538,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T133439Z_18a958,completed,LINK_FAILURE:L4,0,0,4,27308
+data/raw/small_v1/exp_20261125T133525Z_41cb68,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T133439Z_18a958,completed,LINK_FAILURE:L2,0,0,4,27275
+data/raw/small_v1/exp_20261125T133614Z_119124,link_failure_experiment,small_link_v1,failed_run,,failed,LINK_FAILURE:L3,0,0,4,12522
+data/raw/small_v1/exp_20261125T134259Z_711202,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T134259Z_0ce796,completed,LINK_FAILURE:L5,0,0,4,27717
+data/raw/small_v1/exp_20261125T134338Z_0172f5,link_failure_experiment,small_link_v1,historical_v1_development,campaign_20261125T134259Z_0ce796,completed,LINK_FAILURE:L3,0,0,4,27706
+data/raw/small_v1/exp_20261125T134917Z_51d622,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L4,0,1,4,27706
+data/raw/small_v1/exp_20261125T135003Z_3f539e,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L2,0,1,4,27675
+data/raw/small_v1/exp_20261125T135051Z_556157,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L3,0,1,4,27704
+data/raw/small_v1/exp_20261125T135125Z_7df390,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L5,0,1,4,27717
+data/raw/small_v1/exp_20261125T135203Z_c5ac4c,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L1,0,1,4,27682
+data/raw/small_v1/exp_20261125T135251Z_ab366d,link_failure_experiment,small_link_v1,dataset,campaign_20261125T134916Z_249a1c,completed,LINK_FAILURE:L6,0,1,4,27710
+data/raw/small_v1/exp_20261125T140815Z_f688dc,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L4,0,1,4,27719
+data/raw/small_v1/exp_20261125T140901Z_4cebf7,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L3,0,1,4,27704
+data/raw/small_v1/exp_20261125T140936Z_707567,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L2,0,1,4,27684
+data/raw/small_v1/exp_20261125T141025Z_f0e531,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L5,0,1,4,27715
+data/raw/small_v1/exp_20261125T141104Z_e26406,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L5,0,1,4,27703
+data/raw/small_v1/exp_20261125T141142Z_358f45,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L4,0,1,4,27719
+data/raw/small_v1/exp_20261125T141228Z_4e5ef6,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L6,0,1,4,27705
+data/raw/small_v1/exp_20261125T141310Z_b89ffc,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L2,0,1,4,27687
+data/raw/small_v1/exp_20261125T141358Z_8a1c3d,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L3,0,1,4,27705
+data/raw/small_v1/exp_20261125T141432Z_0af1c9,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L1,0,1,4,27680
+data/raw/small_v1/exp_20261125T141520Z_c7cfcc,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L1,0,1,4,27684
+data/raw/small_v1/exp_20261125T141609Z_c95f4a,link_failure_experiment,small_link_v1,dataset,campaign_20261125T140815Z_f24de3,completed,LINK_FAILURE:L6,0,1,4,27706
+data/raw/small_v1/load_pilot_20261125T142531Z_591715,load_pilot,load_pilot_v1,historical_pilot,,completed,,,0,6,34308
+data/raw/small_v1/receiver_verify_20261125T143400Z_8a5a05,receiver_verification,stage_a,stage_a_failed_attempt,,failed,,,0,4,27278
+data/raw/small_v1/receiver_verify_20261125T144728Z_9d7e8e,receiver_verification,stage_a,stage_a_failed_attempt,,failed,,,0,4,27288
+data/raw/small_v1/receiver_verify_20261125T144957Z_737f8b,receiver_verification,stage_a,stage_a_failed_attempt,,failed,,,0,4,27298
+data/raw/small_v1/receiver_verify_20261125T152455Z_a3813a,receiver_verification,stage_a,stage_a_verification,,completed,,,0,8,67737
+data/raw/small_v1/receiver_verify_20261125T152524Z_6cac92,receiver_verification,stage_a,stage_a_verification,,completed,,,0,8,67707
+data/raw/small_v1/receiver_verify_20261125T152547Z_b5ee78,receiver_verification,stage_a,stage_a_verification,,completed,,,0,8,67738
+data/raw/small_v1/scn_20261125T153343Z_19d369,scenario_experiment,small_scenario_v2,smoke_test,,completed,LINK_FAILURE:L5,5,0,11,204370
+data/raw/small_v1/scn_20261125T153741Z_930949,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L2,5,0,12,247863
+data/raw/small_v1/scn_20261125T153842Z_012888,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L5,40,0,12,209116
+data/raw/small_v1/scn_20261125T153934Z_56e301,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L5,5,0,12,207948
+data/raw/small_v1/scn_20261125T154026Z_1c89a4,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L5,0,0,8,86233
+data/raw/small_v1/scn_20261125T154107Z_d2bfed,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L2,40,0,12,249850
+data/raw/small_v1/scn_20261125T154207Z_452384,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T153741Z_6531c8,completed,LINK_FAILURE:L2,0,0,8,86096
+data/raw/small_v1/scn_20261125T154421Z_1b02e7,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L2,5,0,12,248474
+data/raw/small_v1/scn_20261125T154522Z_9c8fbb,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L5,40,0,12,210047
+data/raw/small_v1/scn_20261125T154614Z_d7cbfa,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L5,5,0,12,208534
+data/raw/small_v1/scn_20261125T154706Z_ad9584,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L5,0,0,8,86315
+data/raw/small_v1/scn_20261125T154746Z_a9ab3d,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L2,40,0,12,249998
+data/raw/small_v1/scn_20261125T154847Z_380cef,scenario_experiment,small_scenario_v2,pilot,campaign_B_pilot_20261125T154421Z_b12ae9,completed,LINK_FAILURE:L2,0,0,8,86260
+data/raw/small_v1/scn_20261125T155025Z_b8123e,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,0,1,8,86394
+data/raw/small_v1/scn_20261125T155105Z_9fd310,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,5,1,12,208343
+data/raw/small_v1/scn_20261125T155157Z_94d09e,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,40,1,12,251714
+data/raw/small_v1/scn_20261125T155258Z_58b77d,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,40,1,12,210625
+data/raw/small_v1/scn_20261125T155350Z_8ca5eb,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,5,1,12,248340
+data/raw/small_v1/scn_20261125T155451Z_08e030,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,0,1,8,86495
+data/raw/small_v1/scn_20261125T155532Z_cb4b78,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,5,1,12,208655
+data/raw/small_v1/scn_20261125T155624Z_4b4a46,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,40,1,12,251806
+data/raw/small_v1/scn_20261125T155726Z_73574a,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,5,1,12,248913
+data/raw/small_v1/scn_20261125T155828Z_206ed8,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,5,1,12,250097
+data/raw/small_v1/scn_20261125T155929Z_4d1f5b,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,40,1,12,250541
+data/raw/small_v1/scn_20261125T160030Z_747264,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,5,1,12,248876
+data/raw/small_v1/scn_20261125T160131Z_4aefe6,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,40,1,12,210071
+data/raw/small_v1/scn_20261125T160223Z_5dd896,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,0,1,8,86462
+data/raw/small_v1/scn_20261125T160304Z_2143c4,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,5,1,12,249930
+data/raw/small_v1/scn_20261125T160405Z_d15557,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,5,1,12,248658
+data/raw/small_v1/scn_20261125T160506Z_dcdb54,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,40,1,12,250427
+data/raw/small_v1/scn_20261125T160607Z_b7a25b,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,5,1,12,248845
+data/raw/small_v1/scn_20261125T160707Z_17efc9,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,40,1,12,250375
+data/raw/small_v1/scn_20261125T160808Z_ab7090,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,40,1,12,210890
+data/raw/small_v1/scn_20261125T160901Z_0e440b,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,0,1,8,86550
+data/raw/small_v1/scn_20261125T160941Z_6db6a3,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,5,1,12,248963
+data/raw/small_v1/scn_20261125T161042Z_f5e5d9,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,0,1,8,85434
+data/raw/small_v1/scn_20261125T161122Z_8af8e9,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,40,1,12,250370
+data/raw/small_v1/scn_20261125T161223Z_8c084b,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,40,1,12,250882
+data/raw/small_v1/scn_20261125T161324Z_47c006,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,5,1,12,248914
+data/raw/small_v1/scn_20261125T161425Z_179750,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,40,1,12,250583
+data/raw/small_v1/scn_20261125T161527Z_eb83cd,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,40,1,12,250541
+data/raw/small_v1/scn_20261125T161629Z_1a05c6,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,40,1,12,250642
+data/raw/small_v1/scn_20261125T161730Z_08c76a,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,5,1,12,250026
+data/raw/small_v1/scn_20261125T161831Z_6a6f3c,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,5,1,12,208619
+data/raw/small_v1/scn_20261125T161923Z_710be0,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,40,1,12,252167
+data/raw/small_v1/scn_20261125T162025Z_38dfd5,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,0,1,8,86533
+data/raw/small_v1/scn_20261125T162105Z_2bfa53,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,5,1,12,248629
+data/raw/small_v1/scn_20261125T162207Z_21482f,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,0,1,8,86437
+data/raw/small_v1/scn_20261125T162247Z_03cccd,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,40,1,12,250638
+data/raw/small_v1/scn_20261125T162348Z_9dbb4f,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,40,1,12,250772
+data/raw/small_v1/scn_20261125T162450Z_f03563,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,0,1,8,86604
+data/raw/small_v1/scn_20261125T162530Z_365dda,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,5,1,12,250087
+data/raw/small_v1/scn_20261125T162631Z_9daf36,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,40,1,12,251760
+data/raw/small_v1/scn_20261125T162732Z_6e400c,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,0,1,8,86428
+data/raw/small_v1/scn_20261125T162813Z_060834,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,0,1,8,86612
+data/raw/small_v1/scn_20261125T162853Z_a6a3bf,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,5,1,12,249924
+data/raw/small_v1/scn_20261125T162954Z_3709ac,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,5,1,12,248832
+data/raw/small_v1/scn_20261125T163055Z_a74920,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,0,1,8,85499
+data/raw/small_v1/scn_20261125T163136Z_9a2b11,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,5,1,12,248629
+data/raw/small_v1/scn_20261125T163237Z_2683c3,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,0,1,8,86492
+data/raw/small_v1/scn_20261125T163318Z_576b9f,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,0,1,8,86530
+data/raw/small_v1/scn_20261125T163359Z_c6070a,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,5,1,12,248493
+data/raw/small_v1/scn_20261125T163500Z_ae3793,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L5,0,1,8,86542
+data/raw/small_v1/scn_20261125T163541Z_4c79d8,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,0,1,8,85438
+data/raw/small_v1/scn_20261125T163622Z_b72351,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,5,1,12,250154
+data/raw/small_v1/scn_20261125T163723Z_1855c2,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,0,1,8,86577
+data/raw/small_v1/scn_20261125T163804Z_63d5c9,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,0,1,8,86501
+data/raw/small_v1/scn_20261125T163844Z_934d85,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L1,40,1,12,250114
+data/raw/small_v1/scn_20261125T163946Z_662df7,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,0,1,8,86477
+data/raw/small_v1/scn_20261125T164027Z_ba62c3,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,0,1,8,86539
+data/raw/small_v1/scn_20261125T164108Z_8c2101,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,40,1,12,251920
+data/raw/small_v1/scn_20261125T164209Z_03e0a1,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L4,5,1,12,248963
+data/raw/small_v1/scn_20261125T164310Z_78dd8c,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,NONE:-,40,1,12,250923
+data/raw/small_v1/scn_20261125T164411Z_a28db9,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L2,0,1,8,86457
+data/raw/small_v1/scn_20261125T164452Z_c9541c,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L6,0,1,8,86572
+data/raw/small_v1/scn_20261125T164533Z_46cc4d,scenario_experiment,small_scenario_v2,dataset,campaign_B_full_20261125T155024Z_bef001,completed,LINK_FAILURE:L3,40,1,12,251805
+data/raw/small_v1/scn_20261125T164805Z_d5a4ee,scenario_experiment,small_scenario_v2,pilot,campaign_C_pilot_20261125T164805Z_87c27c,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",5,0,12,251029
+data/raw/small_v1/scn_20261125T164907Z_d62f5c,scenario_experiment,small_scenario_v2,pilot,campaign_C_pilot_20261125T164805Z_87c27c,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",40,0,12,253615
+data/raw/small_v1/scn_20261125T165008Z_1317c8,scenario_experiment,small_scenario_v2,pilot,campaign_C_pilot_20261125T164805Z_87c27c,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",5,0,12,252423
+data/raw/small_v1/scn_20261125T165109Z_b45d4e,scenario_experiment,small_scenario_v2,pilot,campaign_C_pilot_20261125T164805Z_87c27c,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",0,0,8,87136
+data/raw/small_v1/scn_20261125T165150Z_c5dbd3,scenario_experiment,small_scenario_v2,pilot,campaign_C_pilot_20261125T164805Z_87c27c,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",5,0,12,250770
+data/raw/small_v1/scn_20261125T165402Z_8b34e1,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",0,1,8,87366
+data/raw/small_v1/scn_20261125T165443Z_3df805,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",5,1,12,250725
+data/raw/small_v1/scn_20261125T165544Z_07ec87,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 5.0}",0,1,8,87301
+data/raw/small_v1/scn_20261125T165625Z_94757b,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 5.0}",0,1,8,87342
+data/raw/small_v1/scn_20261125T165707Z_12270f,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",5,1,12,252329
+data/raw/small_v1/scn_20261125T165808Z_f6ca6a,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",5,1,12,252315
+data/raw/small_v1/scn_20261125T165909Z_2f3c86,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",5,1,12,252611
+data/raw/small_v1/scn_20261125T170010Z_fee519,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",0,1,8,87151
+data/raw/small_v1/scn_20261125T170051Z_d908d0,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",0,1,8,88123
+data/raw/small_v1/scn_20261125T170132Z_ee6f10,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",0,1,8,87410
+data/raw/small_v1/scn_20261125T170213Z_f41644,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",0,1,8,88116
+data/raw/small_v1/scn_20261125T170253Z_018616,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",0,1,8,87148
+data/raw/small_v1/scn_20261125T170334Z_71516d,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",40,1,12,253336
+data/raw/small_v1/scn_20261125T170435Z_a5efa8,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",5,1,12,252644
+data/raw/small_v1/scn_20261125T170537Z_1bc2fc,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",5,1,12,250779
+data/raw/small_v1/scn_20261125T170638Z_797f79,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",0,1,8,88213
+data/raw/small_v1/scn_20261125T170718Z_d15f80,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",5,1,12,250449
+data/raw/small_v1/scn_20261125T170820Z_12cf6c,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",5,1,12,251120
+data/raw/small_v1/scn_20261125T170922Z_af4742,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",5,1,12,252423
+data/raw/small_v1/scn_20261125T171023Z_9e5206,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",40,1,12,253397
+data/raw/small_v1/scn_20261125T171124Z_329769,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",0,1,8,87420
+data/raw/small_v1/scn_20261125T171205Z_5024d2,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",5,1,12,250706
+data/raw/small_v1/scn_20261125T171306Z_ffcdf0,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",40,1,12,253618
+data/raw/small_v1/scn_20261125T171408Z_4ce7c0,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L5{""loss_pct"": 5.0}",0,1,8,88140
+data/raw/small_v1/scn_20261125T171448Z_c37a86,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",0,1,8,87318
+data/raw/small_v1/scn_20261125T171529Z_067fa3,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",5,1,12,251108
+data/raw/small_v1/scn_20261125T171630Z_52594d,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",5,1,12,252486
+data/raw/small_v1/scn_20261125T171731Z_2a67ca,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_BANDWIDTH:L5{""bw_mbps"": 10.0, ""queue_pkts"": 100}",0,1,8,87090
+data/raw/small_v1/scn_20261125T171812Z_406e07,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",0,1,8,87403
+data/raw/small_v1/scn_20261125T171852Z_8a7003,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",5,1,12,250727
+data/raw/small_v1/scn_20261125T171953Z_8cb059,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 5.0}",0,1,8,87326
+data/raw/small_v1/scn_20261125T172034Z_f1a50e,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",5,1,12,251118
+data/raw/small_v1/scn_20261125T172136Z_9a46cc,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",0,1,8,88206
+data/raw/small_v1/scn_20261125T172218Z_88a0ba,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L2{""added_delay_ms"": 20.0}",5,1,12,251024
+data/raw/small_v1/scn_20261125T172320Z_ae1d0a,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_DELAY:L5{""added_delay_ms"": 20.0}",0,1,8,87337
+data/raw/small_v1/scn_20261125T172401Z_f7ca60,scenario_experiment,small_scenario_v2,dataset,campaign_C_full_20261125T165402Z_db0b5f,completed,"LINK_LOSS:L2{""loss_pct"": 5.0}",0,1,8,88258
+data/raw/small_v1/scn_20261125T172703Z_b5f2ff,scenario_experiment,small_scenario_v2,pilot,campaign_D_pilot_20261125T172703Z_22ae4a,completed,NODE_FAILURE:PC-SHOP,5,0,12,209428
+data/raw/small_v1/scn_20261125T172757Z_7cee60,scenario_experiment,small_scenario_v2,pilot,campaign_D_pilot_20261125T172703Z_22ae4a,completed,NODE_FAILURE:SW-COM,5,0,12,249661
+data/raw/small_v1/scn_20261125T172858Z_566c02,scenario_experiment,small_scenario_v2,pilot,campaign_D_pilot_20261125T172703Z_22ae4a,completed,SWITCH_BLACKHOLE:DSW-1,5,0,12,249753
+data/raw/small_v1/scn_20261125T173000Z_291d5c,scenario_experiment,small_scenario_v2,pilot,campaign_D_pilot_20261125T172703Z_22ae4a,completed,NODE_FAILURE:DSW-1,0,0,8,87648
+data/raw/small_v1/scn_20261125T173105Z_cef4ac,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,5,1,12,250701
+data/raw/small_v1/scn_20261125T173206Z_c875e8,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:POS,5,1,12,250122
+data/raw/small_v1/scn_20261125T173308Z_4a7534,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,0,1,8,88419
+data/raw/small_v1/scn_20261125T173349Z_09ddbe,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,5,1,12,249968
+data/raw/small_v1/scn_20261125T173451Z_8ff81f,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-ADM,5,1,12,250339
+data/raw/small_v1/scn_20261125T173552Z_dc5bcf,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,0,1,8,88464
+data/raw/small_v1/scn_20261125T173633Z_5cf0d4,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,5,1,12,249698
+data/raw/small_v1/scn_20261125T173734Z_ac5432,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,0,1,8,87597
+data/raw/small_v1/scn_20261125T173815Z_54faf7,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,0,1,8,87510
+data/raw/small_v1/scn_20261125T173857Z_da39c7,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,5,1,12,250573
+data/raw/small_v1/scn_20261125T173958Z_55c737,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,5,1,12,249452
+data/raw/small_v1/scn_20261125T174100Z_f1689d,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,5,1,12,249975
+data/raw/small_v1/scn_20261125T174201Z_536a2a,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,0,1,8,88440
+data/raw/small_v1/scn_20261125T174243Z_bdcf72,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,5,1,12,250597
+data/raw/small_v1/scn_20261125T174344Z_8e812c,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-SHOP,5,1,12,209770
+data/raw/small_v1/scn_20261125T174437Z_f46da4,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,5,1,12,249719
+data/raw/small_v1/scn_20261125T174539Z_37ae42,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,0,1,8,88408
+data/raw/small_v1/scn_20261125T174622Z_e642df,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,5,1,12,250808
+data/raw/small_v1/scn_20261125T174723Z_9374c0,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,0,1,8,88432
+data/raw/small_v1/scn_20261125T174804Z_144e31,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,5,1,12,250774
+data/raw/small_v1/scn_20261125T174906Z_08c04b,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,5,1,12,249291
+data/raw/small_v1/scn_20261125T175007Z_9ff291,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:POS,5,1,12,250105
+data/raw/small_v1/scn_20261125T175108Z_dcb07b,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,0,1,8,87712
+data/raw/small_v1/scn_20261125T175150Z_8d4f8b,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SRV-LOCAL,5,1,12,248804
+data/raw/small_v1/scn_20261125T175252Z_dadf8e,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:POS,5,1,12,249903
+data/raw/small_v1/scn_20261125T175353Z_9331c9,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,5,1,12,249774
+data/raw/small_v1/scn_20261125T175454Z_0abf33,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,5,1,12,250356
+data/raw/small_v1/scn_20261125T175555Z_5bf96b,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,0,1,8,88516
+data/raw/small_v1/scn_20261125T175636Z_d9dd63,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SRV-LOCAL,5,1,12,248874
+data/raw/small_v1/scn_20261125T175737Z_d270b6,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,5,1,12,250650
+data/raw/small_v1/scn_20261125T175839Z_eacfb8,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,0,1,8,88466
+data/raw/small_v1/scn_20261125T175920Z_a8863e,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-COM,5,1,12,250501
+data/raw/small_v1/scn_20261125T180021Z_f0c5d1,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,0,1,8,88410
+data/raw/small_v1/scn_20261125T180102Z_1f9e33,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:DSW-1,0,1,8,87592
+data/raw/small_v1/scn_20261125T180143Z_218df1,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,0,1,8,88440
+data/raw/small_v1/scn_20261125T180225Z_8814cc,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,5,1,12,249415
+data/raw/small_v1/scn_20261125T180326Z_b93f5d,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,5,1,12,249861
+data/raw/small_v1/scn_20261125T180428Z_3f6c3b,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,0,1,8,87685
+data/raw/small_v1/scn_20261125T180509Z_beb296,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,SWITCH_BLACKHOLE:SW-ADM,0,1,8,88410
+data/raw/small_v1/scn_20261125T180550Z_b4450c,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-ADM,5,1,12,250178
+data/raw/small_v1/scn_20261125T180653Z_1f059d,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:DSW-1,0,1,8,87689
+data/raw/small_v1/scn_20261125T180735Z_a51daf,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,5,1,12,250793
+data/raw/small_v1/scn_20261125T180837Z_cf7ac6,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-COM,0,1,8,88480
+data/raw/small_v1/scn_20261125T180919Z_fb9913,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SRV-LOCAL,5,1,12,248975
+data/raw/small_v1/scn_20261125T181021Z_10d827,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:SW-ADM,0,1,8,88504
+data/raw/small_v1/scn_20261125T181102Z_dfd0e1,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-SHOP,5,1,12,209604
+data/raw/small_v1/scn_20261125T181155Z_a08978,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-SHOP,5,1,12,209657
+data/raw/small_v1/scn_20261125T181248Z_c261db,scenario_experiment,small_scenario_v2,dataset,campaign_D_full_20261125T173105Z_35c196,completed,NODE_FAILURE:PC-ADM,5,1,12,250312

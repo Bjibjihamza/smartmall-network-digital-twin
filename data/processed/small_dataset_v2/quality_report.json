@@ -1,0 +1,197 @@
+{
+  "checks": [
+    {
+      "check": "unique_experiment_ids",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no_label_columns:pair_window",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no_label_columns:interface_window",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no_label_columns:flow_window",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "check": "unique_label_keys",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "pair_rows_per_window_6",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "interface_rows_per_window_12",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "flow_rows_per_window_1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "experiments_referenced_consistently",
+      "pass": true,
+      "detail": "label experiments == experiment table"
+    },
+    {
+      "check": "interface_topology_mapping",
+      "pass": true,
+      "detail": "0 rows"
+    },
+    {
+      "check": "pair_nodes_are_hosts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "icmp_route_unreachable_vs_loss_semantics",
+      "pass": true,
+      "detail": "0 violations"
+    },
+    {
+      "check": "no_counter_resets",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "no_negative_rates_or_deltas",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "window_timestamps_monotonic_non_overlapping",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "labels_consistent_with_phase_and_topology",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "flow_table_receiver_metrics_only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "each_experiment_in_exactly_one_fold",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "strata_cover_all_folds",
+      "pass": true,
+      "detail": "{}"
+    }
+  ],
+  "stats": {
+    "window_duration_s": {
+      "small_scenario_v2": {
+        "n": 1323,
+        "min": 3.997,
+        "mean": 4.086,
+        "max": 4.214
+      },
+      "small_link_v1": {
+        "n": 108,
+        "min": 3.056,
+        "mean": 6.573,
+        "max": 10.259
+      }
+    },
+    "missing_fraction": {
+      "pair_window.loss_pct[small_link_v1]": 0.0556,
+      "pair_window.loss_pct[small_scenario_v2]": 0.0272,
+      "pair_window.rtt_avg_ms[small_link_v1]": 0.1852,
+      "pair_window.rtt_avg_ms[small_scenario_v2]": 0.1451,
+      "pair_window.rtt_mdev_ms[small_link_v1]": 1.0,
+      "pair_window.rtt_mdev_ms[small_scenario_v2]": 0.1451,
+      "interface_window.qdisc_drops_delta[small_link_v1]": 1.0,
+      "interface_window.qdisc_backlog_pkts[small_link_v1]": 1.0,
+      "interface_window.qdisc_overlimits_delta[small_link_v1]": 1.0,
+      "flow_window.receiver_mbps[small_link_v1]": 1.0,
+      "flow_window.receiver_mbps[small_scenario_v2]": 0.3878,
+      "flow_window.receiver_lost_packets[small_link_v1]": 1.0,
+      "flow_window.receiver_lost_packets[small_scenario_v2]": 0.3878,
+      "flow_window.receiver_alignment_reliable[small_link_v1]": 1.0,
+      "flow_window.sender_alive_at_window_end[small_link_v1]": 1.0,
+      "flow_window.sender_alive_at_window_end[small_scenario_v2]": 0.3878
+    },
+    "windows_by_family": {
+      "NONE": 981,
+      "LINK_FAILURE": 198,
+      "LINK_DELAY": 45,
+      "LINK_BANDWIDTH": 27,
+      "LINK_LOSS": 36,
+      "NODE_FAILURE": 90,
+      "SWITCH_BLACKHOLE": 54
+    },
+    "windows_by_target_active": {
+      "L4": 33,
+      "L5": 105,
+      "L6": 33,
+      "L2": 69,
+      "L3": 33,
+      "L1": 33,
+      "SW-ADM": 36,
+      "POS": 9,
+      "DSW-1": 36,
+      "PC-ADM": 9,
+      "SW-COM": 36,
+      "PC-SHOP": 9,
+      "SRV-LOCAL": 9
+    },
+    "experiments_by_family_protocol": {
+      "LINK_FAILURE[small_scenario_v2]": 54,
+      "NONE[small_scenario_v2]": 9,
+      "LINK_DELAY[small_scenario_v2]": 15,
+      "LINK_BANDWIDTH[small_scenario_v2]": 9,
+      "LINK_LOSS[small_scenario_v2]": 12,
+      "NODE_FAILURE[small_scenario_v2]": 30,
+      "SWITCH_BLACKHOLE[small_scenario_v2]": 18,
+      "LINK_FAILURE[small_link_v1]": 18
+    },
+    "experiments_by_fold": {
+      "2": 55,
+      "1": 55,
+      "3": 55
+    },
+    "leakage_interface_state": {
+      "rule": "fault_active := any interface admin_up==0 or carrier==0",
+      "true_positives": 288,
+      "false_positives": 0,
+      "admin_mechanism_fault_windows": 288,
+      "recall_on_admin_mechanism_faults": 1.0,
+      "interpretation": "Near-perfect detection from interface state alone = mechanism leakage, not learned diagnosis"
+    },
+    "leakage_localization_from_admin_state": {
+      "windows": 288,
+      "exact_target_recovered": 288,
+      "rule": "link faults: set of links with a down interface; node faults: nodes with admin-down interfaces"
+    },
+    "leakage_window_id_vs_phase_v2": {
+      "01->healthy": 147,
+      "02->healthy": 147,
+      "03->healthy": 147,
+      "04->failed": 147,
+      "05->failed": 147,
+      "06->failed": 147,
+      "07->recovered": 147,
+      "08->recovered": 147,
+      "09->recovered": 147
+    }
+  },
+  "passed": true
+}

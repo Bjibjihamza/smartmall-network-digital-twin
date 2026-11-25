@@ -1,0 +1,157 @@
+{
+  "topology_id": "small_v1",
+  "nodes": [
+    {
+      "index": 0,
+      "node_id": "DSW-1",
+      "type": "switch",
+      "attrs": {
+        "layer": "distribution"
+      }
+    },
+    {
+      "index": 1,
+      "node_id": "SW-ADM",
+      "type": "switch",
+      "attrs": {
+        "layer": "access"
+      }
+    },
+    {
+      "index": 2,
+      "node_id": "SW-COM",
+      "type": "switch",
+      "attrs": {
+        "layer": "access"
+      }
+    },
+    {
+      "index": 3,
+      "node_id": "PC-ADM",
+      "type": "host",
+      "attrs": {
+        "zone": "administration"
+      }
+    },
+    {
+      "index": 4,
+      "node_id": "SRV-LOCAL",
+      "type": "host",
+      "attrs": {
+        "zone": "services"
+      }
+    },
+    {
+      "index": 5,
+      "node_id": "PC-SHOP",
+      "type": "host",
+      "attrs": {
+        "zone": "commerce"
+      }
+    },
+    {
+      "index": 6,
+      "node_id": "POS",
+      "type": "host",
+      "attrs": {
+        "zone": "paiement"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "index": 0,
+      "link_id": "L1",
+      "source": "DSW-1",
+      "target": "SW-ADM",
+      "source_index": 0,
+      "target_index": 1,
+      "static_attrs": {
+        "bandwidth_mbps": 1000,
+        "delay_ms": 1
+      }
+    },
+    {
+      "index": 1,
+      "link_id": "L2",
+      "source": "DSW-1",
+      "target": "SW-COM",
+      "source_index": 0,
+      "target_index": 2,
+      "static_attrs": {
+        "bandwidth_mbps": 1000,
+        "delay_ms": 1
+      }
+    },
+    {
+      "index": 2,
+      "link_id": "L3",
+      "source": "SW-ADM",
+      "target": "PC-ADM",
+      "source_index": 1,
+      "target_index": 3,
+      "static_attrs": {
+        "bandwidth_mbps": 100,
+        "delay_ms": 1
+      }
+    },
+    {
+      "index": 3,
+      "link_id": "L4",
+      "source": "SW-ADM",
+      "target": "SRV-LOCAL",
+      "source_index": 1,
+      "target_index": 4,
+      "static_attrs": {
+        "bandwidth_mbps": 100,
+        "delay_ms": 1
+      }
+    },
+    {
+      "index": 4,
+      "link_id": "L5",
+      "source": "SW-COM",
+      "target": "PC-SHOP",
+      "source_index": 2,
+      "target_index": 5,
+      "static_attrs": {
+        "bandwidth_mbps": 100,
+        "delay_ms": 1
+      }
+    },
+    {
+      "index": 5,
+      "link_id": "L6",
+      "source": "SW-COM",
+      "target": "POS",
+      "source_index": 2,
+      "target_index": 6,
+      "static_attrs": {
+        "bandwidth_mbps": 100,
+        "delay_ms": 1
+      }
+    }
+  ],
+  "sample_unit": "(experiment_id, window_id) -> one graph snapshot",
+  "edge_features_from": "interface_window (two directed interface rows per link: node_id->peer)",
+  "pair_features_from": "pair_window (host-pair end-to-end probes; candidate hyper-edges / path features)",
+  "flow_features_from": "flow_window (single background flow PC-SHOP->SRV-LOCAL)",
+  "default_excluded_columns": [
+    "experiment_id",
+    "window_id",
+    "experiment_id",
+    "window_id",
+    "counter_reset",
+    "admin_up",
+    "carrier",
+    "oper_up",
+    "experiment_id",
+    "window_id",
+    "receiver_alignment_reliable"
+  ],
+  "label_tasks": {
+    "detection": "labels_window.fault_active (window-level binary)",
+    "family": "labels_window.fault_family",
+    "localization": "labels_window.fault_target (link or node ID) for fault_active==1"
+  }
+}

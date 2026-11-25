@@ -1,0 +1,72 @@
+table,column,unit,leakage_class,model_input,description
+pair_window,experiment_id,,identifier,no,Experiment identifier; grouping/split key only
+pair_window,window_id,,identifier,no,Window ID; ordinal encodes phase order in a run
+pair_window,source_node_id,,graph_key,key,Probe source host
+pair_window,target_node_id,,graph_key,key,Probe target host
+pair_window,packets_sent,packets,observation,yes,ICMP echo requests transmitted (0 if route_unreachable)
+pair_window,packets_received,packets,observation,yes,ICMP echo replies received
+pair_window,loss_pct,%,observation,yes,ICMP loss; EMPTY when no packet was sent (never 100%)
+pair_window,rtt_avg_ms,ms,observation,yes,Mean RTT of received replies; empty if none
+pair_window,rtt_mdev_ms,ms,observation,yes,RTT mean deviation (v2 only)
+pair_window,reachable,0/1,observation,yes,At least one reply received
+pair_window,route_unreachable,0/1,observation,yes,Source kernel refused to send (local route/interface down)
+pair_window,probe_status,,observation,yes,icmp_stats | route_unreachable
+interface_window,experiment_id,,identifier,no,Experiment identifier
+interface_window,window_id,,identifier,no,Window ID
+interface_window,link_id,,graph_key,key,Topology link (edge key)
+interface_window,node_id,,graph_key,key,Node owning the interface
+interface_window,peer_node_id,,graph_key,key,Node at the other end of the link
+interface_window,duration_s,s,observation,yes,Counter-delta interval for this interface
+interface_window,rx_mbps,Mb/s,observation,yes,Ingress byte rate incl. headers
+interface_window,tx_mbps,Mb/s,observation,yes,Egress byte rate incl. headers
+interface_window,rx_pps,pkt/s,observation,yes,Ingress packet rate
+interface_window,tx_pps,pkt/s,observation,yes,Egress packet rate
+interface_window,rx_errors_delta,packets,observation,yes,Kernel rx error counter delta
+interface_window,tx_errors_delta,packets,observation,yes,Kernel tx error counter delta
+interface_window,rx_dropped_delta,packets,observation,yes,Kernel rx drop counter delta
+interface_window,tx_dropped_delta,packets,observation,yes,Kernel tx drop counter delta
+interface_window,counter_reset,0/1,quality_flag,no,Counter decreased within window (deltas blanked)
+interface_window,admin_up,0/1,mechanism_revealing,restricted,Administrative state AFTER window. Directly set by LINK_FAILURE/NODE_FAILURE injection: reveals the fault location
+interface_window,carrier,0/1,mechanism_revealing,restricted,Carrier (no NO-CARRIER flag). Peer-side carrier loss reveals NODE_FAILURE neighbours; v1 rows derive it from operstate
+interface_window,oper_up,0/1,mechanism_revealing,restricted,operstate == UP after window
+interface_window,qdisc_drops_delta,packets,observation,yes,Queue (netem leaf) drops in window. Includes netem random loss for LINK_LOSS (v2 only)
+interface_window,qdisc_backlog_pkts,packets,observation,yes,Queue backlog at window end (v2 only)
+interface_window,qdisc_overlimits_delta,events,observation,yes,HTB overlimit events (rate-cap pressure; v2 only)
+flow_window,experiment_id,,identifier,no,Experiment identifier
+flow_window,window_id,,identifier,no,Window ID
+flow_window,offered_mbps,Mb/s,condition,conditional,"Configured UDP offered load (experimental condition, not a fault label; constant per run)"
+flow_window,flow_active_fraction,0..1,observation,yes,Fraction of window with a live sender process
+flow_window,receiver_mbps,Mb/s,observation,yes,iperf3 receiver goodput allocated to window
+flow_window,receiver_lost_packets,packets,observation,caution,"iperf3 sequence-gap losses; after a disconnection they are attributed when traffic RESUMES, not when lost"
+flow_window,receiver_alignment_reliable,0/1,quality_flag,no,0 if a transition lies within one receiver interval (0.5 s) of the window boundary
+flow_window,sender_alive_at_window_end,0/1,observation,caution,iperf3 client process alive; it aborts when its own interface is down
+labels_window,experiment_id,,identifier,no,Join key
+labels_window,window_id,,identifier,no,Join key
+labels_window,phase,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,fault_active,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,fault_family,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,fault_category,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,fault_target,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,target_kind,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,param_added_delay_ms,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,param_loss_pct,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,param_bw_mbps,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,param_queue_pkts,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,window_start_unix,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,window_end_unix,,ground_truth,no,Ground truth / label (never a feature)
+labels_window,expected_unreachable_pairs,,ground_truth,no,Ground truth / label (never a feature)
+experiments,experiment_id,,identifier,no,Experiment-level metadata
+experiments,protocol_version,,condition,no,Experiment-level metadata
+experiments,campaign_id,,identifier,no,Experiment-level metadata
+experiments,scenario_key,,ground_truth,no,Experiment-level metadata
+experiments,fault_family,,ground_truth,no,Experiment-level metadata
+experiments,fault_target,,ground_truth,no,Experiment-level metadata
+experiments,offered_mbps,,condition,no,Experiment-level metadata
+experiments,repetition,,condition,no,Experiment-level metadata
+experiments,run_seed,,identifier,no,Experiment-level metadata
+experiments,audit,,condition,no,Experiment-level metadata
+experiments,n_windows,,condition,no,Experiment-level metadata
+experiments,window_s_nominal,,condition,no,Experiment-level metadata
+experiments,probe_mode,,condition,no,Experiment-level metadata
+experiments,split_fold,,split,no,Experiment-level metadata
+experiments,raw_relative_path,,identifier,no,Experiment-level metadata
