@@ -1,0 +1,492 @@
+{
+  "topology_id": "large_v1",
+  "family": "large",
+  "nodes": [
+    {
+      "id": "DSW-1",
+      "type": "switch",
+      "layer": "distribution"
+    },
+    {
+      "id": "DSW-2",
+      "type": "switch",
+      "layer": "distribution"
+    },
+    {
+      "id": "DSW-3",
+      "type": "switch",
+      "layer": "distribution"
+    },
+    {
+      "id": "SW-ADM",
+      "type": "switch",
+      "layer": "access",
+      "zone": "administration"
+    },
+    {
+      "id": "PC-ADM-01",
+      "type": "host",
+      "zone": "administration"
+    },
+    {
+      "id": "PC-ADM-02",
+      "type": "host",
+      "zone": "administration"
+    },
+    {
+      "id": "PRINTER-ADM",
+      "type": "host",
+      "zone": "administration"
+    },
+    {
+      "id": "SW-RETAIL-A",
+      "type": "switch",
+      "layer": "access",
+      "zone": "retail"
+    },
+    {
+      "id": "PC-SHOP-01",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "PC-SHOP-02",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "POS-RETAIL-01",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "SW-RETAIL-B",
+      "type": "switch",
+      "layer": "access",
+      "zone": "retail"
+    },
+    {
+      "id": "PC-SHOP-03",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "PC-SHOP-04",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "POS-RETAIL-02",
+      "type": "host",
+      "zone": "retail"
+    },
+    {
+      "id": "SW-PAYMENT",
+      "type": "switch",
+      "layer": "access",
+      "zone": "payment"
+    },
+    {
+      "id": "POS-01",
+      "type": "host",
+      "zone": "payment"
+    },
+    {
+      "id": "POS-02",
+      "type": "host",
+      "zone": "payment"
+    },
+    {
+      "id": "PAYMENT-TERMINAL",
+      "type": "host",
+      "zone": "payment"
+    },
+    {
+      "id": "SW-SECURITY",
+      "type": "switch",
+      "layer": "access",
+      "zone": "security"
+    },
+    {
+      "id": "CAMERA-01",
+      "type": "host",
+      "zone": "security"
+    },
+    {
+      "id": "CAMERA-02",
+      "type": "host",
+      "zone": "security"
+    },
+    {
+      "id": "NVR-01",
+      "type": "host",
+      "zone": "security"
+    },
+    {
+      "id": "SW-IOT",
+      "type": "switch",
+      "layer": "access",
+      "zone": "iot"
+    },
+    {
+      "id": "SENSOR-01",
+      "type": "host",
+      "zone": "iot"
+    },
+    {
+      "id": "SENSOR-02",
+      "type": "host",
+      "zone": "iot"
+    },
+    {
+      "id": "HVAC-CONTROLLER",
+      "type": "host",
+      "zone": "iot"
+    },
+    {
+      "id": "SW-WIFI",
+      "type": "switch",
+      "layer": "access",
+      "zone": "wifi"
+    },
+    {
+      "id": "CLIENT-GUEST-01",
+      "type": "host",
+      "zone": "wifi"
+    },
+    {
+      "id": "CLIENT-GUEST-02",
+      "type": "host",
+      "zone": "wifi"
+    },
+    {
+      "id": "CLIENT-STAFF-01",
+      "type": "host",
+      "zone": "wifi"
+    },
+    {
+      "id": "SW-SERVICES",
+      "type": "switch",
+      "layer": "access",
+      "zone": "services"
+    },
+    {
+      "id": "SRV-DNS",
+      "type": "host",
+      "zone": "services"
+    },
+    {
+      "id": "SRV-WEB",
+      "type": "host",
+      "zone": "services"
+    },
+    {
+      "id": "SRV-MONITOR",
+      "type": "host",
+      "zone": "services"
+    }
+  ],
+  "links": [
+    {
+      "id": "L1",
+      "source": "DSW-1",
+      "target": "DSW-2",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L2",
+      "source": "DSW-2",
+      "target": "DSW-3",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L3",
+      "source": "DSW-3",
+      "target": "DSW-1",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L4",
+      "source": "DSW-1",
+      "target": "SW-ADM",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L5",
+      "source": "DSW-2",
+      "target": "SW-ADM",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L6",
+      "source": "SW-ADM",
+      "target": "PC-ADM-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L7",
+      "source": "SW-ADM",
+      "target": "PC-ADM-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L8",
+      "source": "SW-ADM",
+      "target": "PRINTER-ADM",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L9",
+      "source": "DSW-1",
+      "target": "SW-RETAIL-A",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L10",
+      "source": "DSW-3",
+      "target": "SW-RETAIL-A",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L11",
+      "source": "SW-RETAIL-A",
+      "target": "PC-SHOP-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L12",
+      "source": "SW-RETAIL-A",
+      "target": "PC-SHOP-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L13",
+      "source": "SW-RETAIL-A",
+      "target": "POS-RETAIL-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L14",
+      "source": "DSW-2",
+      "target": "SW-RETAIL-B",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L15",
+      "source": "DSW-3",
+      "target": "SW-RETAIL-B",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L16",
+      "source": "SW-RETAIL-B",
+      "target": "PC-SHOP-03",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L17",
+      "source": "SW-RETAIL-B",
+      "target": "PC-SHOP-04",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L18",
+      "source": "SW-RETAIL-B",
+      "target": "POS-RETAIL-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L19",
+      "source": "DSW-1",
+      "target": "SW-PAYMENT",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L20",
+      "source": "DSW-2",
+      "target": "SW-PAYMENT",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L21",
+      "source": "SW-PAYMENT",
+      "target": "POS-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L22",
+      "source": "SW-PAYMENT",
+      "target": "POS-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L23",
+      "source": "SW-PAYMENT",
+      "target": "PAYMENT-TERMINAL",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L24",
+      "source": "DSW-2",
+      "target": "SW-SECURITY",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L25",
+      "source": "DSW-3",
+      "target": "SW-SECURITY",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L26",
+      "source": "SW-SECURITY",
+      "target": "CAMERA-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L27",
+      "source": "SW-SECURITY",
+      "target": "CAMERA-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L28",
+      "source": "SW-SECURITY",
+      "target": "NVR-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L29",
+      "source": "DSW-1",
+      "target": "SW-IOT",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L30",
+      "source": "DSW-3",
+      "target": "SW-IOT",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L31",
+      "source": "SW-IOT",
+      "target": "SENSOR-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L32",
+      "source": "SW-IOT",
+      "target": "SENSOR-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L33",
+      "source": "SW-IOT",
+      "target": "HVAC-CONTROLLER",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L34",
+      "source": "DSW-1",
+      "target": "SW-WIFI",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L35",
+      "source": "DSW-2",
+      "target": "SW-WIFI",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L36",
+      "source": "SW-WIFI",
+      "target": "CLIENT-GUEST-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L37",
+      "source": "SW-WIFI",
+      "target": "CLIENT-GUEST-02",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L38",
+      "source": "SW-WIFI",
+      "target": "CLIENT-STAFF-01",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L39",
+      "source": "DSW-2",
+      "target": "SW-SERVICES",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L40",
+      "source": "DSW-3",
+      "target": "SW-SERVICES",
+      "bandwidth_mbps": 1000,
+      "delay_ms": 1
+    },
+    {
+      "id": "L41",
+      "source": "SW-SERVICES",
+      "target": "SRV-DNS",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L42",
+      "source": "SW-SERVICES",
+      "target": "SRV-WEB",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    },
+    {
+      "id": "L43",
+      "source": "SW-SERVICES",
+      "target": "SRV-MONITOR",
+      "bandwidth_mbps": 100,
+      "delay_ms": 1
+    }
+  ]
+}
